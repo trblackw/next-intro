@@ -1,11 +1,12 @@
-import React from 'react'
+import Layout from '../components/Layout';
+import Link from 'next/link';
 
-const index = () => {
-  return (
-    <div>
-      Welcome to the homepage
-    </div>
-  )
-}
+export default () => (
+	<Layout title="Home">
+		<Link href="/about">
+			<a>Go to about</a>
+		</Link>
+		<p>Welcome to the homepage</p>
+	</Layout>
+);
 
-export default index
